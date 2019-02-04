@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 100%; 
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: "futura-pt", Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.4em; 
+}
+
+main {
+    position: absolute; 
+    padding: 4rem;
+    margin-top: 100px; 
+}
+
+/* laster inn siden...*/
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #fff; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #222;  
+}
+
+#overlay img {
+    width: 64px;
+}
+
+/* tekst */
+
+main h1,
+main h2,
+main h3,
+main p, 
+main ul {
+    width: 100vw;
+    margin-left: 20%;
+}
+  
+main h1 {
+    font-family: "adelle", "futura-pt", Arial, Helvetica, sans-serif; 
+}
+
+main h3 {
+    margin-top: 50px; 
+}
+
+main p {
+    width: 490px;
+    font-size: 1.2rem; 
+    line-height: 1.6em; 
+}
+
+/* bilder */
+
+.skisse {
+    margin: 0 auto;
+    max-width: 970px;
+}
+
+.skisse img {
+    margin-top: 100px; 
+    width: 100%; 
+    height: 600px; 
+}
+
+.mockups {
+    margin-top: 100px; 
+    width: 100%;
+    height: auto;
+}
+
+.mockups img {
+    width: 100%; 
+    height: 900px; 
+}
+
+/* footer */
+
+footer {
+    height: 100px; 
+    margin-top: 100px; 
+    margin-left: 75%;
+    font-size: 1.5rem; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: #222; 
+}
+
+footer .link-border {
+    width: 160px; 
+    margin-left: -5px; 
+    margin-top: -7px; 
+    background-color: #f1b5a1;
+}
+
+.link-border.nettside {
+    width: 170px; 
+    margin-bottom: 30px; 
+}
+
+/* responsiv */
+
+@media screen and (max-width: 1020px) {
+    .skisse img {
+        margin-left: 10%; 
+        width: 700px; 
+        height: 400px; 
+    }
+
+    footer a {
+        margin-left: -170px; 
+    }
+    
+    footer .link-border {
+        margin-left: -175px; 
+    }  
+}
+
+@media screen and (max-width: 840px)  {
+    .mockups img {
+        height: 500px; 
+    }
+
+    .skisse img {
+        width: 600px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skisse img {
+        display: none; 
+    }
+
+    #overlay {
+        left:10%;
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    main {
+        margin-left: -5%; 
+    }
+
+    main p {
+        width: 350px; 
+        font-size: 1.1rem; 
+    }
+
+    main h2, main h3 {
+        font-size: 1rem; 
+    }
+
+    .mockups img {
+        height: 400px; 
+    }
+
+    footer a {
+        font-size: 1.2rem;
+    }
+
+    
+footer .link-border {
+    width: 130px; 
+    margin-top: -8px;
+    background-color: #f1b5a1;
+}
+
+.link-border.nettside {
+    width: 140px; 
+    margin-bottom: 40px; 
+}
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+    main p {
+        width: 250px; 
+        font-size: 1rem; 
+    }
+
+    main h1{
+        font-size: 1.4rem;
+    }
+
+    main h2, main h3 {
+        width: 250px;
+        font-size: 1rem; 
+    }
+
+    #overlay {
+        left:10%;
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "intro" : {
+        "tittel" : "Portefølje",
+        "tekst" : "Jeg heter Merethe og er snart utdannet Interaksjonsdesigner. På denne siden kan du se noen av mine tidligere prosjekter. Jeg har stor motivasjon og lidenskap for å skape fine og brukervennlige nettsider og applikasjoner."
+    },
+    "meny" : {
+        "hjem" : "Hjem",
+        "meg" : "Om meg",
+        "oversikt" : "Arbeid",
+        "mail" : "mailto:merethe.olstoren@gmail.com",
+        "linkedin" : "https://linkedin.com/in/meretheolstoren",
+        "github" : "https://github.com/Merethee",
+        "ikoner" : [
+            "./img/icon-gmail.png", 
+            "./img/icon-linkedin.png", 
+            "./img/icon-github.png"
+        ]
+    },
+    "meg" : {
+        "tittel" : "Hei. Mitt navn er Merethe Ølstøren og jeg er snart utdannet interaksjonsdesigner.",
+        "studie" : "Jeg studerer fortiden på Høyskolen Kristiania, og er ferdig utdannet interaksjonsdesigner juni 2019. Jeg har i tillegg bachelor i markedsføring, og en nåværende deltidsjobb som interaksjonsdesigner i Track Norge.",
+        "fulltid": "Jeg er på utskikk etter en fulltidsjobb hvor jeg kan bruke mine ferdigheter innen design og koding.",
+        "kontakt": "Send meg en mail eller kontakt meg på linkedin hvis du vil vite mer om meg og mine arbeidserfaringer.", 
+        "bilde" : [
+            "img/meg.jpg"
+        ]
+    }
+}

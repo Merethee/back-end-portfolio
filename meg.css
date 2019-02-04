@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    width: 100vw;
+    height: 100vh;
+    font-family: "futura-pt", Arial, Helvetica, sans-serif;
+    line-height: 1.4em; 
+}
+
+/* tekst */
+
+.tekst-meg {
+    border: 1px solid #fff; 
+    position: relative; 
+    top: 160px;
+    right: 30%;  
+}
+
+.tekst-meg h3,
+.tekst-meg p {
+    width: 100vw;
+    margin-left: 50%;
+}
+  
+.tekst-meg h3 {
+    width: 380px;
+    font-family: "adelle", "futura-pt", Arial, Helvetica, sans-serif; 
+    margin-bottom: 50px; 
+}
+
+.tekst-meg p {
+    width: 405px;
+    font-size: 1.2rem; 
+    font-weight: 100; 
+}
+
+/* bilde */
+
+.bilde-meg {
+    position: relative;
+    top: -330px; 
+    left: 60%;  
+}
+.bilde-meg img {
+    width: 200px; 
+    height: auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* button */
+
+form button {
+    cursor: pointer; 
+    margin-left: 50%; 
+    margin-top: 20px; 
+}
+
+button {
+    width: 160px;
+    height: 40px; 
+    border-radius: 20px; 
+    padding: 5px; 
+
+    background: #fff; 
+    cursor: pointer; 
+    border: 2px solid #65746E; 
+    text-align: center;
+    font-family: "futura-pt", Arial, Helvetica, sans-serif; 
+    font-size: 1rem;
+    margin-bottom: 20px; 
+}
+
+button:hover {
+    background-color:#65746E; 
+    color: #fff; 
+    border: 2px solid transparent; 
+}
+
+
+/* responsivt */
+
+@media screen and (max-width: 1030px){
+    .bilde-meg {
+       left: 70%; 
+    } 
+}
+
+@media screen and (max-width: 830px) {
+     .tekst-meg {
+         top: 100px; 
+     }
+
+    .tekst-meg h3,
+    .tekst-meg p,
+    form button {
+        margin-left: 60%;
+    }
+
+    .bilde-meg {
+        display: none; 
+     } 
+     
+    button {
+        background-color:#65746E; 
+        color: #fff; 
+     }
+}
+
+@media screen and (max-width: 580px){
+    .tekst-meg h3,
+    .tekst-meg p,
+    form button {
+        width: 267px;
+        font-size: 1.1rem; 
+    }
+}
+

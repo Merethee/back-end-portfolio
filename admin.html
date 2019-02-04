@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yvj6lua.css"> <!--futura og adelle font-->
+
+</head>
+<body>
+    <header>
+        <h3 style="text-align: center;">Velkommen</h3>
+    </header>
+
+    <main>
+        <h2>Lag nytt prosjekt</h2>
+        <hr style="margin-bottom: 40px;">
+    <!--skjema for tekst-->
+        <form id="skjemaTekst">
+            <div>
+                <p>
+                    <label for="inpOverskrift">Overskrift</label>
+                </p>
+                <input type="text" id="inpOverskrift" required>
+            </div>
+
+            <div>
+                <p>
+                    <label for="inpTittel">Tittel</label>
+                </p>
+                <input type="text" id="inpTittel" placeholder="bedrift el." required>
+            </div>
+
+            <div>
+                <p>
+                    <label for="inpTema">Tema</label>
+                </p>
+                <input type="text" id="inpTema" required>
+            </div>
+
+            <div>
+                <p style="font-weight:700">Sammendrag</p>
+                <div id="inpSammendrag"></div>
+            </div>
+
+            <div>
+                <p style="font-weight:700">Målgruppe</p>
+                <div id="inpMålgruppe"></div>
+            </div>
+
+            <div>
+                <p style="font-weight:700">Prosjektinformasjon</p>
+                <div id="inpProsjekt"></div>
+            </div>
+
+            <div>
+                <p>
+                    <label for="inpLink">Link til prosjekt</label>
+                </p>
+                <input type="text" id="inpLink" placeholder="github, behance el.">
+            </div>
+        </form>
+    <!--skjema for bilder-->
+        <h2 style="margin-top: 60px; font-size: 1.3rem;">Last opp bilder</h2>
+        <form id="skjemaBilder">
+            <div>
+                <input type="file" id="inpFil" >
+                <p>
+                   <label for="inpFil">Navgi bilde</label> 
+                </p>
+                <input type="text" id="inpTekst" placeholder="bildetekst">
+                <button id="lastopp" type="submit">Last opp bilde</button>
+                <div id="bilder"></div>
+            </div>
+        </form>
+
+        <button id="publiser" type="submit">Publiser nettside</button>
+    </main>
+    
+
+<!--loading gif ved opplastning av bilde-->
+    <div id="overlay">
+        <img src="./img/loading-gif.gif" alt="loading">
+        <p>Laster opp bilde...</p>
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyCivkrl_itFXNNSaGQXuNK3VwCZBcEdNmc",
+    authDomain: "portfolio-tema13.firebaseapp.com",
+    databaseURL: "https://portfolio-tema13.firebaseio.com",
+    projectId: "portfolio-tema13",
+    storageBucket: "portfolio-tema13.appspot.com",
+    messagingSenderId: "177768049798"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/balloon/ckeditor.js"></script>
+<script src="./admin-bilder.js"></script>
+<script src="./admin.js"></script>
+</body>
+</html>

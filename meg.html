@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Om meg</title>
+    <link rel="stylesheet" href="./meg.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yvj6lua.css"> <!--futura og adelle font-->
+</head>
+<body>
+<!--meny-->
+    <div class="menu"> 
+        <div class="ham">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="side-nav">
+            <div class="link-menu"></div>
+        </div>
+        <div class="contact"></div>
+    </div>      
+
+    <main></main>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCivkrl_itFXNNSaGQXuNK3VwCZBcEdNmc",
+    authDomain: "portfolio-tema13.firebaseapp.com",
+    databaseURL: "https://portfolio-tema13.firebaseio.com",
+    projectId: "portfolio-tema13",
+    storageBucket: "portfolio-tema13.appspot.com",
+    messagingSenderId: "177768049798"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./meg.js"></script>
+<script src="./menu.js"></script>
+</body>
+</html>
