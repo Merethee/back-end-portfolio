@@ -10,12 +10,14 @@ function visProsjekt(snap) {
     const prosjekt = snap.val();
 
     main.innerHTML += `
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <article style="background-image: url('${prosjekt.forsidebilde.url}')">
             <a href="prosjekt.html?pid=${pid}">
             <h1>${prosjekt.overskrift}</h1>
             <p>${prosjekt.tittel}</p>
             </a>
         </article>
+    </div>
     `;
 }
 

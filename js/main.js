@@ -12,8 +12,10 @@ function forsideTekst(snap) {
     const info = snap.val(); 
 
     header.innerHTML += `
-    <h1>${info.tittel}</h1>
-    <p>${info.tekst}</p>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
+        <h1>${info.tittel}</h1>
+        <p>${info.tekst}</p>
+    </div>
     `;
 }
 

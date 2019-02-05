@@ -24,6 +24,7 @@ function visProsjekt(snap) {
     let pid_neste = sider[indeks + 1];
 
     main.innerHTML = `
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <h1>${innhold.overskrift}</h1>
         <h2>${innhold.tittel}</h2>
         <h3>${innhold.tema}</h3>
@@ -32,20 +33,36 @@ function visProsjekt(snap) {
         <div class="images skisse">
             <img src="${innhold.skissebilde.url} alt="skisser"> 
         </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <p style="margin-top: 100px;">${innhold.målgruppe}</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <div class="images mockups">
             <img src="${innhold.macbilde.url} alt="mac"> 
         </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <p style="margin-top: 100px;">${innhold.prosjekt}</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <div class="images mockups">
             <img src="${innhold.iphonebilde.url} alt="iphone"> 
         </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <footer>
             <a href="${innhold.link}" target="_blank">Se prosjektet her</a>
             <div class="link-border nettside"></div>
             <a style="font-weight:700" href="prosjekt.html?pid=${pid_neste}">Neste arbeid</a>
             <div class="link-border"></div>
         </footer>
+    </div>
     `;
 }
 
