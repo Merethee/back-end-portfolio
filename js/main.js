@@ -1,6 +1,7 @@
 
 const main = document.querySelector(".scroll.container"); 
 const header = document.querySelector("header"); 
+const footer = document.querySelector("footer"); 
 
 const db = firebase.database(); 
 
@@ -16,7 +17,15 @@ function forsideTekst(snap) {
         <h1>${info.tittel}</h1>
         <p>${info.tekst}</p>
     </div>
+        <p class="skroll-ned">skroll nedover for å bla i prosjektene
+        <span class="line"></span>
+        </p>
     `;
+
+    footer.innerHTML += `
+    <p class="copyright">Copyright &#169; 2019 - Merethe Ølstøren</p>
+    `;
+
 }
 
 function forsideProsjekter(snap) {
