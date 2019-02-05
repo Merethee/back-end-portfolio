@@ -52,6 +52,7 @@ main p,
 main ul {
     width: 100vw;
     margin-left: 20%;
+
 }
 
 main li {
@@ -184,16 +185,16 @@ footer .link-border {
     }
 
     
-footer .link-border {
-    width: 130px; 
-    margin-top: -8px;
-    background-color: #f1b5a1;
-}
+    footer .link-border {
+        width: 130px; 
+        margin-top: -8px;
+        background-color: #f1b5a1;
+    }
 
-.link-border.nettside {
-    width: 140px; 
-    margin-bottom: 40px; 
-}
+    .link-border.nettside {
+        width: 140px; 
+        margin-bottom: 40px; 
+    }
 
 }
 
