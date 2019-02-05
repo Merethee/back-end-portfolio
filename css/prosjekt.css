@@ -19,6 +19,7 @@ main {
     position: absolute; 
     padding: 4rem;
     margin-top: 100px; 
+    overflow-x: hidden; 
 }
 
 /* laster inn siden...*/
@@ -52,6 +53,11 @@ main ul {
     width: 100vw;
     margin-left: 20%;
 }
+
+main li {
+    width: 200px; 
+}
+
   
 main h1 {
     font-family: "adelle", "futura-pt", Arial, Helvetica, sans-serif; 

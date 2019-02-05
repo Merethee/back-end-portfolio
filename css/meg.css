@@ -45,8 +45,8 @@ body {
 /* bilde */
 
 .bilde-meg {
-    position: relative;
-    top: -330px; 
+    position: absolute;
+    top: 100px; 
     left: 60%;  
 }
 .bilde-meg img {
