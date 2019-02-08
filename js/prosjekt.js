@@ -57,7 +57,7 @@ function visProsjekt(snap) {
 
     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"  data-aos-delay="300">
         <footer>
-            <a href="${innhold.link}" target="_blank">Se prosjektet her</a>
+            <a href="${innhold.link}" target="_blank">Se nettsiden her</a>
             <div class="link-border nettside"></div>
             <a style="font-weight:700" href="prosjekt.html?pid=${pid_neste}">Neste arbeid</a>
             <div class="link-border"></div>

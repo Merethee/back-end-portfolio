@@ -17,7 +17,7 @@ function forsideTekst(snap) {
         <h1>${info.tittel}</h1>
         <p>${info.tekst}</p>
     </div>
-        <p class="skroll-ned">skroll nedover for å bla i prosjektene
+        <p class="skroll-ned">skroll ned og opp for å bla i prosjektene
         <span class="line"></span>
         </p>
     `;

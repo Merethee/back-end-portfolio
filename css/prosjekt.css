@@ -40,7 +40,11 @@ main {
 }
 
 #overlay img {
-    width: 64px;
+    width: 200px;
+}
+
+#overlay p {
+    margin-top: -40px; 
 }
 
 /* tekst */
