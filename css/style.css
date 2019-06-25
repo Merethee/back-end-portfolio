@@ -84,7 +84,7 @@ header p {
 .scroll {
     position: relative;  
     display: block;
-    left: -400px; 
+    left: -600px; 
     top: 150px; 
 
     width: calc(550px + 1px);
@@ -172,6 +172,12 @@ p.copyright {
 }
 
 /* responsivt */
+
+@media screen and (max-width: 1570px) {
+    .scroll {
+        left: -400px; }
+}
+
 
 @media screen and (max-width: 1172px){
     .scroll {
