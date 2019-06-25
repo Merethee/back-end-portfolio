@@ -136,6 +136,18 @@ footer .link-border {
 }
 
 /* responsiv */
+@media screen and (max-width: 1750px) {
+    .skisse {
+        position: relative;
+        left:0;        
+   }
+
+   .mockups img {
+
+    height: 600px; 
+}
+
+}
 
 @media screen and (max-width: 1440px) {
     .skisse {
