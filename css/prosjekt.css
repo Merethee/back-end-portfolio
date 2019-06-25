@@ -83,23 +83,30 @@ main p {
 .skisse {
     margin: 0 auto;
     max-width: 970px;
+    position: relative;
+    left:-10%;
 }
 
 .skisse img {
     margin-top: 100px; 
     width: 100%; 
     height: 600px; 
+  
 }
 
 .mockups {
     margin-top: 100px; 
     width: 100%;
-    height: auto;
+    position: relative;
+    left: 20%;
+    
 }
 
 .mockups img {
     width: 100%; 
+    max-width: 60%;
     height: 900px; 
+
 }
 
 /* footer */
@@ -130,11 +137,39 @@ footer .link-border {
 
 /* responsiv */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1440px) {
+    .skisse {
+        position: relative;
+        left:-10%;
+   }
     .skisse img {
-        margin-left: 10%; 
+        margin-left: 20%; 
         width: 700px; 
         height: 400px; 
+    }
+
+    .mockups {
+        left:10%;
+    }
+    .mockups img {
+        max-width: 80%;
+
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+  
+    .mockups {
+        margin-top: 100px; 
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .mockups img {
+        max-width: 100%;
+        height: 500px; 
     }
 
     footer a {
@@ -147,9 +182,6 @@ footer .link-border {
 }
 
 @media screen and (max-width: 840px)  {
-    .mockups img {
-        height: 500px; 
-    }
 
     .skisse img {
         width: 600px; 
